@@ -1,6 +1,43 @@
+*{
+box-sizing: border-box;
+}
+
 body {
-  background-color: $back;
-  color: $text;
-  user-select: none;
-  font-family: 'Roboto';
+margin: 0;
+background: #009578;
+font-family: 'Roboto', sans-serif;
+}
+
+#app {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  padding: 24px;
+  gap: 24px; 
+}
+
+.note {
+  height: 200px;
+  padding: 16px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 7px rgb(0, 0, 0, 0.15);
+  resize: none;
+  outline: none;
+
+}
+
+.add-note {
+  height: 200px;
+  padding: 16px;
+  border: none;
+  background: rgb(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-size: 160px;
+  color: rgb(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: background .2s;
+  &:hover {
+  background: rgb(0, 0, 0, 0.2);
+
+  }
 }
